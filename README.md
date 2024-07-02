@@ -1,6 +1,7 @@
 # bunny
 
 To install dependencies:
+ - Tailwind: https://tailwindcss.com/docs/installation
 
 ```bash
 bun install
