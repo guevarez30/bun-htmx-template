@@ -1,0 +1,37 @@
+{
+  "name": "bunny",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.jsx",
+    "build": "bun build index.jsx",
+    "start": "NODE_ENV=production bun index.jsx",
+    "test": "bun test",
+    "style": "bunx tailwindcss -i ./public/tailwind.css -o ./public/style.css --watch"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "daisyui": "latest",
+    "tailwindcss": "^3.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^1.0.2",
+    "@elysiajs/static": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "elysia": "^1.0.22",
+    "flatpickr": "^4.6.13",
+    "hono": "^4.4.4",
+    "lucide-react": "^0.390.0",
+    "react": "canary",
+    "react-dom": "canary",
+    "serve-static": "^1.15.0",
+    "tailwind": "^4.0.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
