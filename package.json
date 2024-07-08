@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@elysiajs/html": "^1.0.2",
+    "@elysiajs/jwt": "^1.0.2",
     "@elysiajs/static": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
