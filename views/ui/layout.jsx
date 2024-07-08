@@ -9,12 +9,10 @@ export default function Layout ({ children }) {
         <script src='https://unpkg.com/htmx.org@1.9.9' />
         <script src='https://cdn.jsdelivr.net/npm/flatpickr' />
       </head>
-      <body id='page'>
-        <main className='flex flex-col'>
-          <div id='popup' />
-          {children}
-        </main>
-      </body>
+      <main className='flex flex-col bg-base-100'>
+        <div id='popup' />
+        {children}
+      </main>
     </html>
   )
 }

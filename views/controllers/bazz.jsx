@@ -1,5 +1,3 @@
-import { renderToReadableStream } from 'react-dom/server'
-
 function Bazz () {
   return (
     <>
@@ -53,7 +51,7 @@ function Bazz () {
 }
 
 async function BazzController () {
-  return <Bazz/>
+  return <Bazz />
 }
 
 export default BazzController

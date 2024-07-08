@@ -8,6 +8,7 @@ import NoopController from "./views/controllers/noop"
 import BarController from "./views/controllers/bar"
 import BazzController from "./views/controllers/bazz"
 import FooController from "./views/controllers/foo"
+import LoginController from './views/controllers/login'
 
 const port = process.env.PORT ?? 3000
 
@@ -21,6 +22,7 @@ try{
     		 <Page/>
     		</Layout>
     	))
+    	.get('/login', LoginController)
     	.get('/foo', FooController)
     	.get('/bar', BarController)
     	.get('/bazz', BazzController)
