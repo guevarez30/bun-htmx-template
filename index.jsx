@@ -4,11 +4,12 @@ import { html } from '@elysiajs/html'
 import Layout from "./views/ui/layout"
 import Page from "./views/ui/page"
 
-import NoopController from "./views/controllers/noop"
-import BarController from "./views/controllers/bar"
-import BazzController from "./views/controllers/bazz"
-import FooController from "./views/controllers/foo"
-import LoginController from './views/controllers/login'
+import NoopController from "./views/pages/noop"
+import BarController from "./views/pages/bar/controller"
+import BazzController from "./views/pages/bazz/controller"
+import FooController from "./views/pages/foo/controller"
+import LoginController from './views/pages/login/controller'
+import DashboardController from './views/pages/dashboard/controller'
 
 const port = process.env.PORT ?? 3000
 
@@ -26,7 +27,8 @@ try{
     	.get('/foo', FooController)
     	.get('/bar', BarController)
     	.get('/bazz', BazzController)
-		.get('/noop', () =>  NoopController)
+		.get('/noop',  NoopController)
+		.get('/dashboard', DashboardController)
     	.listen(port)
 }catch(err){
 	console.error(err)

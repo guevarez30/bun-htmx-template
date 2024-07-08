@@ -1,4 +1,4 @@
-function Bar () {
+export default function Bar () {
   return (
     <>
       <div class='w-full flex justify-center'>
@@ -21,9 +21,3 @@ function Bar () {
     </>
   )
 }
-
-async function BarController () {
-  return <Bar />
-}
-
-export default BarController

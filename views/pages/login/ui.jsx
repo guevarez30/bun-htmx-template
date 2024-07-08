@@ -1,6 +1,6 @@
-import Layout from '../ui/layout'
+import Layout from '../../ui/layout'
 
-function Login () {
+export default function Login () {
   return (
     <div className='hero bg-base-200 min-h-screen'>
       <div className='hero-content flex-col lg:flex-row-reverse'>
@@ -37,13 +37,3 @@ function Login () {
     </div>
   )
 }
-
-async function LoginController () {
-  return (
-    <Layout>
-      <Login />
-    </Layout>
-  )
-}
-
-export default LoginController

@@ -1,4 +1,4 @@
-function Bazz () {
+export default function Bazz () {
   return (
     <>
       <div class='carousel rounded-box'>
@@ -45,13 +45,6 @@ function Bazz () {
           />
         </div>
       </div>
-
     </>
   )
 }
-
-async function BazzController () {
-  return <Bazz />
-}
-
-export default BazzController
