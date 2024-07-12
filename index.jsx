@@ -4,6 +4,7 @@ import { jwt } from "@elysiajs/jwt";
 
 import Layout from "./views/ui/layout";
 import Page from "./views/ui/page";
+import App from "./views/ui/app";
 
 import NoopController from "./views/pages/noop";
 import BarController from "./views/pages/bar/controller";
@@ -11,7 +12,7 @@ import BazzController from "./views/pages/bazz/controller";
 import FooController from "./views/pages/foo/controller";
 import { LoginForm, LoginPage } from "./views/pages/login/controller";
 import DashboardController from "./views/pages/dashboard/controller";
-import Login from "./views/pages/login/ui";
+import SettingsController from "./views/pages/settings/controller";
 
 const port = process.env.PORT ?? 3000;
 
@@ -44,13 +45,13 @@ try {
       if (!profile) {
         return (
           <Layout>
-            <Login />
+            <Page />
           </Layout>
         );
       }
       return (
         <Layout>
-          <Page />
+          <App />
         </Layout>
       );
     })
@@ -61,6 +62,7 @@ try {
     .get("/bazz", BazzController, { beforeHandle: auth })
     .get("/noop", NoopController, { beforeHandle: auth })
     .get("/dashboard", DashboardController, { beforeHandle: auth })
+    .get("/settings", SettingsController, { beforeHandle: auth })
     .listen(port);
 } catch (err) {
   console.error(err);

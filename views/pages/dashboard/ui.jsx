@@ -1,6 +1,6 @@
 export default function Dashboard() {
   return (
-    <div class="stats shadow">
+    <div class="stats shadow bg-content-100">
       <div class="stat">
         <div class="stat-figure text-primary">
           <svg
