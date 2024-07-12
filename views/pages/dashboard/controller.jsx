@@ -1,9 +1,7 @@
-import Dashboard from './ui'
+import Dashboard from "./ui";
 
-async function DashboardController () {
-  return (
-    <Dashboard />
-  )
+async function DashboardController() {
+  return <Dashboard />;
 }
 
-export default DashboardController
+export default DashboardController;

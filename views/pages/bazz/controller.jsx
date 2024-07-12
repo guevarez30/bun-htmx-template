@@ -1,7 +1,7 @@
-import Bazz from './ui'
+import Bazz from "./ui";
 
-async function BazzController () {
-  return <Bazz />
+async function BazzController() {
+  return <Bazz />;
 }
 
-export default BazzController
+export default BazzController;

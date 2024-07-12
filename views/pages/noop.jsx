@@ -1,14 +1,14 @@
-import { renderToReadableStream } from 'react-dom/server'
+import { renderToReadableStream } from "react-dom/server";
 
-function Noop () {
-  return (<></>)
+function Noop() {
+  return <></>;
 }
 
-async function NoopController () {
-  const stream = await renderToReadableStream(<Noop />)
+async function NoopController() {
+  const stream = await renderToReadableStream(<Noop />);
   return new Response(stream, {
-    headers: { 'Content-Type': 'text/html' }
-  })
+    headers: { "Content-Type": "text/html" },
+  });
 }
 
-export default NoopController
+export default NoopController;
