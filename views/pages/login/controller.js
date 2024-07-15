@@ -3,8 +3,7 @@ import Page from '../../ui/page'
 import Login from './ui'
 
 export async function LoginForm ({ body, set, jwt, cookie: { auth }}) {
-	if(body.email == 'mail@mail.com'){
-		console.log(body.email)
+	if(true){
         auth.set({
             value: await jwt.sign(body.email),
             httpOnly: true,
